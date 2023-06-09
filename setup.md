@@ -11,8 +11,8 @@ sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bs
 3. Install Go:
 ```
 cd $HOME
-wget -c -O go1.20.1.linux-amd64.tar.gz https://golang.org/dl/go1.20.1.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.1.linux-amd64.tar.gz && sudo rm go1.20.1.linux-amd64.tar.gz
+wget -c -O go1.20.4.linux-amd64.tar.gz https://golang.org/dl/go1.20.4.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz && sudo rm go1.20.4.linux-amd64.tar.gz
 echo 'export GOROOT=/usr/local/go' >> $HOME/.bash_profile
 echo 'export GOPATH=$HOME/go' >> $HOME/.bash_profile
 echo 'export GO111MODULE=on' >> $HOME/.bash_profile
@@ -29,7 +29,7 @@ git pull
 ```
 5. Checkout to the actual tag:
 ```
-git checkout v4.1.0
+git checkout v4.4.2
 ```
 6. Build the software and copy ``umeed`` binary file to ``/usr/local/bin``:
 ```

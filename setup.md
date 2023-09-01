@@ -29,7 +29,7 @@ git pull
 ```
 5. Checkout to the actual tag:
 ```
-git checkout v4.4.2
+git checkout v5.1.0
 ```
 6. Build the software and copy ``umeed`` binary file to ``/usr/local/bin``:
 ```

@@ -11,8 +11,8 @@ sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bs
 3. Install Go:
 ```
 cd $HOME
-wget -c -O go1.23.3.linux-amd64.tar.gz https://golang.org/dl/go1.23.3.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.3.linux-amd64.tar.gz && sudo rm go1.23.3.linux-amd64.tar.gz
+wget -c -O go1.23.4.linux-amd64.tar.gz https://golang.org/dl/go1.23.4.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.4.linux-amd64.tar.gz && sudo rm go1.23.4.linux-amd64.tar.gz
 echo 'export GOROOT=/usr/local/go' >> $HOME/.bash_profile
 echo 'export GOPATH=$HOME/go' >> $HOME/.bash_profile
 echo 'export GO111MODULE=on' >> $HOME/.bash_profile
@@ -29,7 +29,7 @@ git pull
 ```
 5. Checkout to the actual tag:
 ```
-git checkout v6.7.0
+git checkout v6.7.2
 ```
 6. Build the software and copy ``umeed`` binary file to ``/usr/local/bin``:
 ```
@@ -75,4 +75,4 @@ sudo systemctl enable umeed
 sudo systemctl restart umeed
 journalctl -u umeed -f -o cat
 ```
-12. If you want to sync your full node quickly you can use state sync guide here: https://github.com/mediumwe11/umee/blob/main/statesync.md
+12. If you want to sync your full node quickly you can use state sync guide here: [Umee State Sync](https://github.com/mediumwe11/Umee-Mainnet-Guides/blob/main/statesync.md)
